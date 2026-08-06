@@ -1,0 +1,10 @@
+let message = prompt("Enter a message:");
+
+let result = "";
+
+for (let i = 0; i < message.length; i++) {
+    let ch = message[i];
+    result = result + String.fromCharCode(ch.charCodeAt(0) + 3);
+}
+
+console.log("Encrypted Message = " + result);
