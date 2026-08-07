@@ -1,0 +1,15 @@
+let str = prompt("Enter a string:");
+
+let count = {};
+
+for (let ch of str) {
+    if (count[ch]) {
+        count[ch]++;
+    } else {
+        count[ch] = 1;
+    }
+}
+
+for (let ch in count) {
+    console.log(ch + " = " + count[ch]);
+}
